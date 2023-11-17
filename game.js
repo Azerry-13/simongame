@@ -6,14 +6,6 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
-$(document).keypress(function() {
-  if (!started) {
-    $("h1").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
-
 $("#button-mob").click(function() {
   if (!started) {
     $("h1").text("Level " + level);
@@ -44,7 +36,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("h1").text("Game Over, Press Any Key to Restart");
+      $("h1").text("Game Over, Press 'Start' to Restart");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
