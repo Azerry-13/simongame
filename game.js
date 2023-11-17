@@ -10,6 +10,7 @@ $("#button-mob").click(function() {
   if (!started) {
     $("h1").text("Level " + level);
     nextSequence();
+    $("#button-mob").css("display", "none");
     started = true;
   }
 });
@@ -36,6 +37,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
+      $("#button-mob").css("display", "block");
       $("h1").text("Game Over, Press 'Start' to Restart");
 
       setTimeout(function () {
