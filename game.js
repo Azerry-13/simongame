@@ -38,7 +38,7 @@ function checkAnswer(currentLevel) {
       playSound("wrong");
       $("body").addClass("game-over");
       $("#button-mob").css("display", "block");
-      $("h1").text("Game Over, Press 'Start' to Restart");
+      $("h1").text("Game Over, Press 'Play' to Restart");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
