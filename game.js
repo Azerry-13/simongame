@@ -6,6 +6,15 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
+$("#rules-show").click(function() {
+  if ($("#rules-read").css("display") === "none") {
+    $("#rules-read").slideDown();
+    $("#rules-read").addClass("isShowed");
+  } else if ($("#rules-read").hasClass("isShowed")) {
+    $("#rules-read").slideUp();
+  }
+})
+
 $("#button-mob").click(function() {
   if (!started) {
     $("h1").text("Level " + level);

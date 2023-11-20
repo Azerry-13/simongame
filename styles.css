@@ -1,13 +1,34 @@
 body {
+  font-family: 'Bradley Hand', cursive;
   text-align: center;
   background-color: #011F3F;
+  padding: 10px;
 }
 
+#rules-read {
+  color: #FEF2BF;
+    text-align: left;
+    display: none;
+    font-size: 2rem;
+    background-color: #013C7B;
+    padding: 10px;
+}
+
+#rules-show {
+    font-size: 2rem;
+    color: #FEF2BF;
+    text-align: right;
+  }
+
+  #rules-show:hover {
+    cursor: pointer;
+  }
+
 #level-title {
-  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
+  line-height: 1.2;
 }
 
 .container {
@@ -53,10 +74,11 @@ body {
 }
 
 #button-mob {
-  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  1%;
   color: #FEF2BF;
+  width: 200px;
+  margin: 0 auto;
 }
 
 #button-mob:hover {
@@ -67,5 +89,15 @@ body {
   .btn {
     height: 150px;
     width: 150px;
+}
+#level-title {
+  font-size: 2rem;
+  margin:  3%;
+}
+#rules-read {
+  color: #FEF2BF;
+    text-align: left;
+    display: none;
+    font-size: 1rem;
 }
 }

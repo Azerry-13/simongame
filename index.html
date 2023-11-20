@@ -9,33 +9,49 @@
 </head>
 
 <body>
+  <div class="rules">
+    <div id="rules-show">Rules</div>
+
+    <p id="rules-read">
+      1) Game Start:<br>
+      The Simon device (or virtual application) displays the first random sequence of flashing colored buttons.<br>
+      <br>
+      2) Repeating the Sequence:<br>
+      The player must replicate this sequence by pressing the corresponding buttons in the same order as shown by Simon.<br>
+      <br>
+      3) Increasing Difficulty:<br>
+      After successfully repeating the sequence, Simon adds a new color to the current sequence, increasing the game's complexity.<br>
+      <br>
+      4) Errors:<br>
+      If the player makes a mistake by pressing the wrong button or pressing in the wrong sequence, the game ends.<br>
+      <br>
+      5) Round Completion:<br>
+      Each successfully completed round increases the player's score.<br>
+      <br>
+      6) Victory:<br>
+      The player continues playing until making an error. The goal is to achieve the highest possible score.<br>
+      <br>
+      7) Sound and Visual Effects:<br>
+      Typically, Simon includes sound and visual effects to indicate successful sequence reproduction and errors.<br>
+    </p>
+  </div>
   <h1 id="level-title">Press "Start" to play</h1>
   <div class="container">
     <div lass="row">
-
       <div type="button" id="green" class="btn green">
-
       </div>
-
       <div type="button" id="red" class="btn red">
-
       </div>
     </div>
-
     <div class="row">
-
       <div type="button" id="yellow" class="btn yellow">
-
       </div>
       <div type="button" id="blue" class="btn blue">
-
       </div>
-
     </div>
-
   </div>
 
-  <div id="button-mob">Play</div>
+  <div id="button-mob">Start</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="game.js"></script>
