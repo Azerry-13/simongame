@@ -9,7 +9,7 @@ body {
   color: #FEF2BF;
     text-align: left;
     display: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #013C7B;
     padding: 10px;
 }
@@ -26,7 +26,7 @@ body {
 
 #level-title {
   font-size: 3rem;
-  margin:  5%;
+  margin: 1%;
   color: #FEF2BF;
   line-height: 1.2;
 }
